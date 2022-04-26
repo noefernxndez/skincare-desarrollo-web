@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Kind</title>
         <link rel="stylesheet" href="css/estilos.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <script
             src="https://kit.fontawesome.com/2abf3f2db7.js"
             crossorigin="anonymous"
@@ -13,195 +14,207 @@
     </head>
 
     <body>
-        <header>
-            <div>
-                <img class="logo" src="images/logo.png" alt="logo" />
-            </div>
-            <nav>
-                <ul>
-                    <li>Inicio</li>
-                    <li><a href="pages/galeria.html">Galería</a></li>
-                    <li><a href="pages/tutoriales.html">Tutoriales</a></li>
-                    <li>
-                        <a href="pages/sobre nosotros.html">Sobre Nosotros</a>
-                    </li>
-                    <li><a href="pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <div class="d-grid grid-hero">
-            <form class="acomodar-form">
-                <h1>Titulo</h1>
-                <p>texto explicando el inputdeemail</p>
-                <label for="email"></label>
-                <input type="email" placeholder="iconodeemail" name="email" />
-            </form>
-            <div class="p-relative">
-                <div class="hero-image-container p-absolute acomodar-imagen">
-                    <img
-                        class="hero-image"
-                        src="images/piel1.png"
-                        alt="fotodepiel"
-                    />
-                </div>
-                <div class="hero-image-container">
-                    <img
-                        class="hero-image"
-                        src="images/piel2.png"
-                        alt="fotodepieldos"
-                    />
-                </div>
-            </div>
-        </div>
-
-        <form class="d-flex buscador-flex">
-            <h2>Título</h2>
-            <p>textoexplicandoinputdebuscador</p>
-            <label for="buscar"></label>
-            <input type="text" placeholder="Iconodebuscar" name="buscar" />
-        </form>
-        <div class="d-grid grid-categorias">
-            <div>
-                <img src="images/pielseca.png" alt="fotodepielseca" />
-                <p>Piel seca</p>
-            </div>
-            <div>
-                <img src="images/acne.png" alt="fotodeacne" />
-                <p>Acné</p>
-            </div>
-            <div>
-                <img src="images/mascarillas.png" alt="fotodemascarillas" />
-                <p>Mascarillas</p>
-            </div>
-            <div>
-                <img src="images/cuerpo.png" alt="fotodepieldecuerpo" />
-                <p>Cuerpo</p>
-            </div>
-            <div>
-                <img src="images/manchas.png" alt="fotodemanchas" />
-                <p>Manchas</p>
-            </div>
-            <div>
-                <img src="images/preparación.png" alt="fotodepreparacion" />
-                <p>Preparación</p>
-            </div>
-        </div>
-        <section>
-            <div class="d-flex tendencias-flex">
+        <div class="container">
+            <header>
                 <div>
-                    <h2>Tendencias</h2>
-                    <a class="boton-ver-mas" href="#">Ver más</a>
+                    <img class="logo" src="images/logo.png" alt="logo"/>
                 </div>
-                <div class="d-flex">
-                    <div>
+                <nav class="navbar navbar-expand-lg">
+                    <button class="navbar-toggler position-absolute top-0 end-0" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div id="menu" class="collapse navbar-collapse">
+                        <ul class="d-flex flex-column flex-md-row">
+                            <li>Inicio</li>
+                            <li><a href="pages/galeria.html">Galería</a></li>
+                            <li><a href="pages/tutoriales.html">Tutoriales</a></li>
+                            <li>
+                                <a href="pages/sobre nosotros.html">Sobre Nosotros</a>
+                            </li>
+                            <li><a href="pages/contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <div class="d-grid grid-hero">
+                <form class="acomodar-form">
+                    <h1 class="hero-text">100% Auténtica</h1>
+                    <p>Suscribite a nuestro Newsletter. Unite a la mejor comunidad para vos y tu piel, en donde vamos a estar hablando cada semana de los mejores trucos, productos y experiencias.</p>
+                    <label for="email"></label>
+                    <div class="p-relative placeholder-icon-container">
+                        <input class="placeholder-icon" type="email" placeholder="Email" name="email" />
+                        <i class="fa-solid fa-at p-absolute input-icon"></i>
+                    </div>
+                </form>
+                <div class="p-relative d-none d-lg-block">
+                    <div class="hero-image-container p-absolute acomodar-imagen">
                         <img
-                            src="images/articulo-de-tendencias-1.png"
-                            alt="fotodearticulouno"
+                            class="hero-image"
+                            src="images/piel1.png"
+                            alt="fotodepiel"
                         />
                     </div>
-                    <div class="d-flex flex-column articulo-info-flex">
-                        <p>fechadeartículo</p>
-                        <p>tagdeartículo</p>
-                        <h3>Títulodeartículo</h3>
-                        <p>unpocodeinformacióndelartículo</p>
+                    <div class="hero-image-container">
+                        <img
+                            class="hero-image"
+                            src="images/piel2.png"
+                            alt="fotodepieldos"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <form class="d-flex buscador-flex">
+                <h2>Título</h2>
+                <p>textoexplicandoinputdebuscador</p>
+                <label for="buscar"></label>
+                <input type="text" placeholder="Iconodebuscar" name="buscar" />
+            </form>
+            <div class="d-grid grid-categorias">
+                <div>
+                    <img src="images/pielseca.png" alt="fotodepielseca" />
+                    <p>Piel seca</p>
+                </div>
+                <div>
+                    <img src="images/acne.png" alt="fotodeacne" />
+                    <p>Acné</p>
+                </div>
+                <div>
+                    <img src="images/mascarillas.png" alt="fotodemascarillas" />
+                    <p>Mascarillas</p>
+                </div>
+                <div>
+                    <img src="images/cuerpo.png" alt="fotodepieldecuerpo" />
+                    <p>Cuerpo</p>
+                </div>
+                <div>
+                    <img src="images/manchas.png" alt="fotodemanchas" />
+                    <p>Manchas</p>
+                </div>
+                <div>
+                    <img src="images/preparación.png" alt="fotodepreparacion" />
+                    <p>Preparación</p>
+                </div>
+            </div>
+            <section>
+                <div class="d-flex tendencias-flex">
+                    <div class="tendencias-titulo-container">
+                        <h2>Tendencias</h2>
+                        <a class="boton-ver-mas" href="#">Ver más</a>
+                    </div>
+                    <div class="d-flex">
                         <div>
+                            <img
+                                src="images/articulo-de-tendencias-1.png"
+                                alt="fotodearticulouno"
+                            />
+                        </div>
+                        <div class="d-flex flex-column articulo-info-flex">
+                            <p>fechadeartículo</p>
+                            <p>tagdeartículo</p>
+                            <h3>Títulodeartículo</h3>
+                            <p>unpocodeinformacióndelartículo</p>
                             <div>
-                                <img
-                                    class="foto-blogger"
-                                    src="images/blogger.jpg"
-                                    alt="fotodelautordelarticulo"
-                                />
+                                <div class="foto-blogger-container">
+                                    <img
+                                        class="foto-blogger"
+                                        src="images/blogger.jpg"
+                                        alt="fotodelautordelarticulo"
+                                    />
+                                </div>
+                                <span>Nombredelautordelarticulo</span>
                             </div>
-                            <span>Nombredelautordelarticulo</span>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="d-grid articulos-grid articulos-relative">
-                <div>
+                <div class="d-grid articulos-grid articulos-relative">
                     <div>
-                        <img
-                            src="images/articulo2tendencias.png"
-                            alt="fotodearticulodos"
-                        />
+                        <div>
+                            <img
+                                src="images/articulo2tendencias.png"
+                                alt="fotodearticulodos"
+                            />
+                        </div>
+                        <div class="texto-imagen-articulo">
+                            <p>categoría</p>
+                            <h3>Títulodeartículo</h3>
+                            <p>unpocodeinformacióndelartículo</p>
+                            <a class="boton-leer" href="#">Leer</a>
+                        </div>
                     </div>
-                    <div class="texto-imagen-articulo">
-                        <p>categoría</p>
-                        <h3>Títulodeartículo</h3>
-                        <p>unpocodeinformacióndelartículo</p>
-                        <a class="boton-leer" href="#">Leer</a>
+                    <div>
+                        <div>
+                            <img
+                                src="images/articulo3tendencias.png"
+                                alt="fotodearticulotres"
+                            />
+                        </div>
+                        <div class="texto-imagen-articulo">
+                            <p>categoría</p>
+                            <h3>Títulodeartículo</h3>
+                            <p>unpocodeinformacióndelartículo</p>
+                            <a class="boton-leer" href="#">Leer</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img
+                                src="images/articulo4tendencias.png"
+                                alt="fotodearticulocuatro"
+                            />
+                        </div>
+                        <div class="texto-imagen-articulo">
+                            <p>categoría</p>
+                            <h3>Títulodeartículo</h3>
+                            <p>unpocodeinformacióndelartículo</p>
+                            <a class="boton-leer" href="#">Leer</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img
+                                src="images/articulo5detendencias.png"
+                                alt="fotodearticulocinco"
+                            />
+                        </div>
+                        <div class="texto-imagen-articulo">
+                            <p>categoría</p>
+                            <h3>Títulodeartículo</h3>
+                            <p>unpocodeinformacióndelartículo</p>
+                            <a class="boton-leer" href="#">Leer</a>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <img
-                            src="images/articulo3tendencias.png"
-                            alt="fotodearticulotres"
-                        />
-                    </div>
-                    <div class="texto-imagen-articulo">
-                        <p>categoría</p>
-                        <h3>Títulodeartículo</h3>
-                        <p>unpocodeinformacióndelartículo</p>
-                        <a class="boton-leer" href="#">Leer</a>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img
-                            src="images/articulo4tendencias.png"
-                            alt="fotodearticulocuatro"
-                        />
-                    </div>
-                    <div class="texto-imagen-articulo">
-                        <p>categoría</p>
-                        <h3>Títulodeartículo</h3>
-                        <p>unpocodeinformacióndelartículo</p>
-                        <a class="boton-leer" href="#">Leer</a>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img
-                            src="images/articulo5detendencias.png"
-                            alt="fotodearticulocinco"
-                        />
-                    </div>
-                    <div class="texto-imagen-articulo">
-                        <p>categoría</p>
-                        <h3>Títulodeartículo</h3>
-                        <p>unpocodeinformacióndelartículo</p>
-                        <a class="boton-leer" href="#">Leer</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
         <footer>
-            <div>
-                <img src="images/logo.blanco.png" alt="logocolorblanco" />
-                <h3>FRASES</h3>
-            </div>
-            <div>
-                <h3>RRSS</h3>
-            </div>
-            <div class="contededor-contacto">
-                <h3>CONTACTO</h3>
-                <ul class="lista-contacto">
-                    <li>ventas@kind.com</li>
-                    <li>contacto@kind.com</li>
-                    <li>+54 9 1134567823</li>
-                    <li>+54 9 1121674355</li>
-                </ul>
-            </div>
-            <div>
-                <a href="#">
-                    <div class="icono-volver">
-                        <i class="fa-solid fa-arrow-up iconoflecha"></i>
-                    </div>
-                    <h3>Volver</h3>
-                </a>
-            </div>
+            <div class="container-lg">
+                <div>
+                    <img src="images/logo.blanco.png" alt="logocolorblanco" />
+                    <h3>FRASES</h3>
+                </div>
+                <div>
+                    <h3>RRSS</h3>
+                </div>
+                <div class="contededor-contacto">
+                    <h3>CONTACTO</h3>
+                    <ul class="lista-contacto">
+                        <li>ventas@kind.com</li>
+                        <li>contacto@kind.com</li>
+                        <li>+54 9 1134567823</li>
+                        <li>+54 9 1121674355</li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="#">
+                        <div class="icono-volver">
+                            <i class="fa-solid fa-arrow-up iconoflecha"></i>
+                        </div>
+                        <h3>Volver</h3>
+                    </a>
+                </div>
+            </div>  
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>
