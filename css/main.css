@@ -1,0 +1,93 @@
+footer {
+  background-color: #1B1B1B; }
+  footer .container-lg {
+    height: 200px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  footer a {
+    color: inherit;
+    text-align: center; }
+
+/* botonprimario */
+.boton-ver-mas, .boton-leer {
+  display: inline-block;
+  background-color: #1B1B1B;
+  padding: 10px 14px;
+  border-radius: 7px;
+  color: white; }
+
+.boton-leer {
+  margin: 20px auto;
+  padding: 10px; }
+  .boton-leer:hover {
+    color: white; }
+
+.grid-categorias {
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto; }
+  .grid-categorias div {
+    position: relative;
+    padding: 20px; }
+    .grid-categorias div img {
+      width: 100%; }
+    .grid-categorias div p {
+      position: absolute;
+      bottom: 50px;
+      left: 50px;
+      font-size: 30px;
+      font-weight: bolder; }
+
+.tendencias-flex {
+  width: 100%;
+  margin: 150px 0 75px 0;
+  justify-content: space-between;
+  align-items: center; }
+  .tendencias-flex .d-flex {
+    width: 50%; }
+
+.articulos-grid {
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  padding: 100px 0; }
+  .articulos-grid img {
+    width: 100%; }
+
+.articulos-relative > div {
+  position: relative;
+  transition: ease 200ms; }
+  .articulos-relative > div:hover {
+    transform: scale(1.1);
+    z-index: 100; }
+    .articulos-relative > div:hover .boton-leer {
+      animation: breathing 2s ease infinite normal; }
+
+.articulo-info-flex {
+  justify-content: space-between; }
+  .articulo-info-flex span {
+    font-size: 12px;
+    font-weight: normal; }
+
+.placeholder-icon {
+  border-radius: 5px;
+  padding-left: 20px;
+  width: 100%;
+  transition: ease 200ms;
+  position: absolute; }
+  .placeholder-icon:hover, .placeholder-icon:focus {
+    width: 320px;
+    height: 32px; }
+
+.flex-contacto-form input, .flex-contacto-form textarea, .flex-contacto-form button {
+  margin: 10px 0; }
+
+#footer-contacto {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+  #footer-contacto ul {
+    width: auto; }
+
+#header-contacto ul {
+  width: auto; }
