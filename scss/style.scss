@@ -1,12 +1,21 @@
-$cool-black: #1B1B1B;
+$estilos: (
+    oscuro: #1B1B1B,
+    claro: white
+);
+
+@mixin general($display, $color, $bg_color, $heigth, $width) {
+    display: $display;
+    color: $color;
+    background-color: $bg_color;
+    height: $heigth;
+    width: $width;
+}
 
 footer {
-    background-color: $cool-black;
+    background-color: map-get($estilos, oscuro);
 
     .container-lg {
-        height: 200px;
-        color: white;
-        display: flex;
+        @include general(flex, map-get($estilos, claro), inherit, 200px, auto);
         justify-content: space-between;
         align-items: center;
     }
@@ -19,11 +28,9 @@ footer {
 
 /* botonprimario */
 .boton-ver-mas {
-    display: inline-block;
-    background-color: $cool-black;
+    @include general(inline-block, map-get($estilos, claro), map-get($estilos, oscuro), auto, auto);
     padding: 10px 14px;
     border-radius: 7px;
-    color: white;
 }
 
 .boton-leer {
@@ -32,7 +39,7 @@ footer {
     padding: 10px;
 
     &:hover {
-        color: white;
+        color: map-get($estilos, claro);
     }
 }
 

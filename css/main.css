@@ -1,9 +1,11 @@
 footer {
   background-color: #1B1B1B; }
   footer .container-lg {
-    height: 200px;
-    color: white;
     display: flex;
+    color: white;
+    background-color: inherit;
+    height: 200px;
+    width: auto;
     justify-content: space-between;
     align-items: center; }
   footer a {
@@ -13,10 +15,12 @@ footer {
 /* botonprimario */
 .boton-ver-mas, .boton-leer {
   display: inline-block;
+  color: white;
   background-color: #1B1B1B;
+  height: auto;
+  width: auto;
   padding: 10px 14px;
-  border-radius: 7px;
-  color: white; }
+  border-radius: 7px; }
 
 .boton-leer {
   margin: 20px auto;
